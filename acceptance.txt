@@ -1,0 +1,7 @@
+about me ,  portfolio , contact ,resume 
+
+open ssh connection 
+
+window. host and client connection. 
+
+remote desktop 

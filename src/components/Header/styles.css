@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+.header {
+    display: flex;
+    background-color: darkgray;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+}
+
+.home {
+    color: seagreen;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.headerNav {
+    margin: 7px 0;
+}
+
+.headerNavUl {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.headerNavUlLi{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+    color:black;
+
+}
