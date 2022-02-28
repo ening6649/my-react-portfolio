@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About'
+import Project from './components/Project';
 
 function App () {
   return (
@@ -13,7 +14,7 @@ function App () {
       <main>
         
         <About></About>
-        
+        <Project></Project>
       </main>
       <section>
         <Footer></Footer>

@@ -1,25 +1,49 @@
 import React from 'react';
 import './styles.css'
 
-function Header() {
+function Header({currerntPage, handlePageChange}) {
     return (
         <section className='header'>
             <p className='home'>
-                Ning's Portfolio
+                Ning's React Portfolio
             </p>
             <nav className='headerNav'>
                 <ul className='headerNavUl'>
                     <li>
-                        <a className='headerNavUlLi' href="#about-me">About Me</a>
+                        <a 
+                        href="#about-me"
+                        className='headerNavUlLi'
+                        onClick={()=> handlePageChange ('about-me')}
+                        >
+                        About Me
+                        </a>
                     </li>
                     <li>
-                        <a className='headerNavUlLi' href="#what-i-do">What I Do</a>
+                        <a 
+                        href="#what-i-do"
+                        className='headerNavUlLi'
+                        onClick={()=> handlePageChange ('what-i-do')}
+                        >
+                        What I Do
+                        </a>
                     </li>
                     <li>
-                      <a className='headerNavUlLi' href="#my-applications">My Applications</a>
+                        <a 
+                        href="#my-applications"
+                        className='headerNavUlLi' 
+                        onClick={()=> handlePageChange ('my-applications')}
+                        >
+                        My Applications
+                        </a>
                     </li>
                     <li>
-                      <a className='headerNavUlLi' href="#contact-me">Contact Me</a>
+                        <a  
+                        href="#contact-me"
+                        className='headerNavUlLi'
+                        onClick={()=> handlePageChange ('contact-me')}
+                        >
+                        Contact Me
+                        </a>
                     </li>
                 </ul>
             </nav>

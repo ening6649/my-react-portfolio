@@ -6,11 +6,6 @@ export default function Card(props) {
     width: '18rem',
   };
 
-  // Helper function that generates a random width for our placeholder images
-  const randomWidth = () => {
-    const number = Math.random() * (300 - 200) + 200;
-    return number.toString().split('.')[0];
-  };
 
 // Update the return statement to display the data we received as props
   return (
@@ -18,15 +13,14 @@ export default function Card(props) {
       <div className="card" style={cardStyle}>
         <img
           className="card-img-top"
-          src={`http://placecorgi.com/${randomWidth()}`}
+          src={props.image}
           alt="Card cap"
         />
         <div className="card-body">
           <h5 className="card-title">Name: {props.name}</h5>
           <p className="card-text">Description: {props.desc}</p>
-          <p className="card-text">ID: {props.id}</p>
           <a href="#" className="btn btn-primary">
-            Adopt {props.name}
+            Adopt {props.link}
           </a>
         </div>
       </div>
